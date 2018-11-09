@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">KongZhiQi</string>
+    <string name="app_yaokong">遥控器</string>
+    <string name="app_shezhi">设置</string>
 </resources>

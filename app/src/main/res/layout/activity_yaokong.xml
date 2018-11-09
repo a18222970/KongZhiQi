@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.kongzhiqi.Yaokong">
+
+    <Button
+        android:id="@+id/kaiGuan_01_kai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="开关1开"
+        app:layout_constraintBottom_toTopOf="@+id/kaiGuan_01_guan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/kaiGuan_01_guan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:layout_marginStart="16dp"
+        android:text="开关1关"
+        app:layout_constraintBottom_toTopOf="@+id/kaiGuan_02_kai"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kaiGuan_01_kai" />
+
+    <Button
+        android:id="@+id/kaiGuan_02_kai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="21dp"
+        android:text="开关2开"
+        app:layout_constraintBottom_toTopOf="@+id/kaiGuan_02_guan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kaiGuan_01_guan" />
+
+    <Button
+        android:id="@+id/kaiGuan_02_guan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="282dp"
+        android:layout_marginStart="16dp"
+        android:text="开关2关"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kaiGuan_02_kai" />
+
+    <ImageView
+        android:id="@+id/kaiGuan_01_zhuangtai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="65dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/kaiGuan_02_zhuangtai"
+        app:layout_constraintStart_toEndOf="@+id/kaiGuan_01_kai"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_shuaxin" />
+
+    <ImageView
+        android:id="@+id/kaiGuan_02_zhuangtai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="65dp"
+        app:layout_constraintStart_toEndOf="@+id/kaiGuan_02_kai"
+        app:layout_constraintTop_toBottomOf="@+id/kaiGuan_01_zhuangtai"
+        app:srcCompat="@mipmap/ic_shuaxin" />
+
+    <Button
+        android:id="@+id/yaokong_shuaXin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="2dp"
+        android:text="刷新"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</android.support.constraint.ConstraintLayout>
